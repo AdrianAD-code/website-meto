@@ -1,0 +1,154 @@
+@page {
+	size: A4 portrait;
+	margin: 0;
+  }
+
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700&display=swap');
+
+
+  *{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: Arial, Helvetica, sans-serif;
+	outline: 1px solid red;
+ }
+
+:root {
+	--primary-color: #ff7613;
+	--text-color: #FFFFFF; 
+}
+
+html {
+	font-size: 10px;
+}
+
+body {
+   display: flex;
+   background-image: url("background_image.jpg");
+   width: 100%;
+   min-height: 100vh;
+   font-family: Inter, sans-serif;
+   color: white;
+}
+
+.description {
+	margin-top: 1rem;
+	font-size: 1.5rem;
+	font-weight: 400;
+	color: var(--text-color);
+}
+.title {
+	color: var(--primary-color);
+	font-weight: 700;
+	font-size: 2rem;
+	text-transform: uppercase;
+}
+
+.container {
+	max-width: 600px;
+	width: 80%;
+	min-height: 100vh;
+	margin: 0 auto;
+	background: #7B3F00;
+	align-items: center;
+	text-align: center;
+ }
+
+ .form {
+	background-color: rgb(0, 0, 238);
+	background-color: rgba(0, 0, 238, 0.5)	; /* sets the background color to transparent violet */
+	max-height: 60vh; 
+	min-width: 400px;
+  }
+  
+  img {
+	max-width: 250px;
+	float: left;
+	border: 10px;
+	border: 3px solid white;
+	margin-right: 20px;
+   }
+
+   .profile {
+	grid-column: 1 / -1;
+	margin-bottom: 2rem;
+}
+
+.profile_container {
+	display: flex;
+	gap: 2rem;
+}
+.profile_profileImg {
+	max-width: 250px;
+}
+.profile_name_firstName {
+	color: white;
+	font-weight: 200;
+	font-size: clamp(2rem, 8vw, 4rem);
+	text-transform: uppercase;
+	display: block;
+	margin-bottom: -0.8rem;
+}
+.profile_name_lastName {
+	color: var(--primary-color);
+	font-weight: 700;
+	font-size: clamp(2.5rem, 15vw, 7rem);
+	text-transform: uppercase;
+	display: block;
+}
+.profile_title {
+	font-size: 1.5rem;
+	font-weight: 400;
+	text-transform: uppercase;
+}
+
+.description {
+	margin-top: 1rem;
+	font-size: 1.5rem;
+	font-weight: 400;
+	color: var(--text-color);
+}
+ 
+.page {
+	display: flex;
+	flex-direction: column;
+}
+
+@media only screen and (max-width: 520px) {
+	body {
+		min-height: 100vh;
+		font-size: small;
+		display: flex;
+		background: #7B3F00;
+	}
+
+	.container {
+		width: 60%;
+		min-height: 100vh;
+		display: flex;
+	    flex-direction: column;
+   }
+
+   .profile_name_firstName {
+		font-size: 20px;
+	  }
+	
+	.profile_name_lastName {
+		font-size: 21px;
+	}
+   }
+	
+
+   img {
+      width: 75%;
+   }
+
+   .img {
+      width: 350px;
+      height: 250px;
+   }
+
+
+  
+  

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Barbershop Meto - Cologne, Germany, Muelheim</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="profile">
+            <div class="profile_container">
+              <div class="profile_profileImg">
+                <img class="img" src="./profileImg.jpg" alt="Adrian - 2023 - Barbershop Meto Koeln Muelheim">
+              </div>
+              <div>
+                <h1 class="profile_name">
+                  <span class="profile_name_firstName">Barbershop</span>
+                  <span class="profile_name_lastName">Meto</span>
+                </h1>
+                <p class="profile_title">Best Barbershop in Muelheim</p>
+              </div>
+            </div>
+          </div>
+      <div class="page">
+        <p class="description profile_description">Welcome to Barbershop Meto, the best place in Muelheim to get a fresh haircut or a stylish shave. Our skilled barbers use only the finest tools and techniques to give you the look you desire. Whether you want a classic cut, a modern style, or something in between, we've got you covered.</p>
+        <hr />
+        <div class="form">
+            <h2> Contact us now and make an appointment</h2>
+            <form method="post" action="process_form.php">
+            <label for="name">Name (max 30 characters):</label>
+            <input type="text" id="name" name="name" maxlength="30" required>
+            <br>
+            <label for="phone">Phone number (max 30 characters):</label>
+            <input type="tel" id="phone" name="phone" maxlength="30" required>
+            <br>
+            <label for="email">Email (max 30 characters):</label>
+            <input type="email" id="email" name="email" maxlength="30" required>
+            <br>
+            <label for="message">Message (max 200 characters):</label>
+            <textarea id="message" name="message" maxlength="200" required></textarea>
+            <br>
+            <label for="appointment">Appointment:</label>
+            <input type="date" id="appointment" name="appointment" value="" min="" max="" required>
+            <br>
+            <label for="time">Time:</label>
+            <input type="time" id="time" name="time" value="" required>
+            <br>
+            <input type="submit" name="submit" value="Submit">
+        </form>
+        </div>
+        </div>
+    </div>
+</body>
+</html>
+
